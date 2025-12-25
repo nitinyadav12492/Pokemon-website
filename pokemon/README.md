@@ -1,16 +1,37 @@
-# React + Vite
+Pokémon Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Pokémon website built using *React.js** and Tailwind CSS, where users can browse Pokémon cards and search/filter Pokémon by name in real-time.
 
-Currently, two official plugins are available:
+---
+ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Built with *React.js*
+- Styled using *Tailwind CSS*
+- *Search & Filter Pokémon cards* by name
+- Fully *responsive design*
+-  Reusable React components
+-  Fast and smooth UI experience
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ Tech Stack
 
-## Expanding the ESLint configuration
+- *React.js*
+- *Tailwind CSS*
+- *JavaScript (ES6+)*
+- *Pokémon API / Static Data* 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+ Search & Filter Functionality
+
+- Users can type a Pokémon name in the search bar
+- Pokémon cards are *filtered instantly**
+- Filtering is *case-insensitive*
+- Implemented using React *state & array filter method*
+
+Example logic:
+```js
+pokemonList.filter(pokemon =>
+  pokemon.name.toLowerCase().includes(search.toLowerCase())
+);
